@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "motion/react";
+
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
 import { About } from "./components/About";
@@ -17,7 +18,9 @@ export default function App() {
   return (
     <div className="relative min-h-screen">
       <AnimatePresence>
-        {isLoading && <LoadingScreen onComplete={() => setIsLoading(false)} />}
+        {isLoading && (
+          <LoadingScreen onComplete={() => setIsLoading(false)} />
+        )}
       </AnimatePresence>
 
       {!isLoading && (
@@ -28,7 +31,7 @@ export default function App() {
         >
           <ParticleBackground />
           <Navbar />
-          
+
           <main>
             <Hero />
             <About />
@@ -53,13 +56,17 @@ export default function App() {
 function MouseGlow() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
-  useState(() => {
+  useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       setMousePos({ x: e.clientX, y: e.clientY });
     };
+
     window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
-  });
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
 
   return (
     <div
@@ -67,4 +74,4 @@ function MouseGlow() {
       style={{ left: mousePos.x, top: mousePos.y }}
     />
   );
-}
+};
