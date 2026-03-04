@@ -22,7 +22,7 @@ export const Registration = () => {
           </h2>
           
           <p className="text-white text-lg mb-12 max-w-xl mx-auto leading-relaxed">
-            Click below to complete your registration through our official Google Form. 
+            Click below to complete registration with Google Form. 
             Ensure all details are accurate for certificate generation.
           </p>
 

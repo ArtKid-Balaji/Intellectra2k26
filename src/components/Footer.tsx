@@ -61,8 +61,8 @@ export const Footer = () => {
                 © 2026 INTELLECTRA . All Rights Reserved.
               </p>
 
-              <p className="text-xs font-mono text-white uppercase tracking-widest mt-3">
-                Designed & Developed by Balaji
+              <p className="text-s font-mono text-white uppercase tracking-widest mt-3">
+                Designed & Developed by <span className="text-neon-cyan">L.balaji  </span> 
               </p>
             </div>
 

@@ -142,9 +142,9 @@ export const Events = () => {
             viewport={{ once: true }}
             className="text-4xl md:text-6xl font-display font-bold text-white mb-4"
           >
-            NON-TECHNICAL <span className="text-neon-blue">EVENTS</span>
+            NON-TECHNICAL <span className="text-neon-cyan">EVENTS</span>
           </motion.h2>
-          <div className="w-24 h-1 bg-neon-blue mx-auto rounded-full" />
+          <div className="w-24 h-1 bg-neon-cyan mx-auto rounded-full" />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

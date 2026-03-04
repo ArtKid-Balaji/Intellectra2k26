@@ -55,7 +55,7 @@ export const About = () => {
             {/* STATS */}
             <div className="flex gap-10">
               <div>
-                <h4 className="text-3xl font-bold text-white">10+</h4>
+                <h4 className="text-3xl font-bold text-white">15+</h4>
                 <p className="text-xs text-neon-cyan uppercase tracking-widest">
                   Colleges
                 </p>
@@ -67,7 +67,7 @@ export const About = () => {
                 </p>
               </div>
               <div>
-                <h4 className="text-3xl font-bold text-white">5+</h4>
+                <h4 className="text-3xl font-bold text-white">7+</h4>
                 <p className="text-xs text-neon-cyan uppercase tracking-widest">
                   Events
                 </p>
@@ -84,7 +84,7 @@ export const About = () => {
           >
             <div className="absolute -inset-4 bg-neon-cyan/20 rounded-[40px] blur-2xl -z-10" />
             <img 
-              src="src/assets/INTELLECTRA 2K26.jpg"
+              src="public/INTELLECTRA 2K26.jpg"
               alt="Symposium" 
               className="rounded-[32px] border border-white/10 shadow-2xl"
               referrerPolicy="no-referrer"
