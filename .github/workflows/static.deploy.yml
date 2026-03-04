@@ -1,4 +1,5 @@
 # Workflow for deploying Vite + React content to GitHub Pages
+# Workflow for deploying Vite + React content to GitHub Pages
 name: Deploy Vite site to Pages
 
 on:
