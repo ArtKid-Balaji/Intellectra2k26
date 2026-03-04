@@ -20,18 +20,20 @@ export const Hero = () => {
         transition={{ duration: 0.8 }}
         className="text-center z-10 max-w-5xl"
       >
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.2 }}
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card border-neon-cyan/20 mb-5"
-        >
-          <Cpu className="w-4 h-4 text-neon-cyan animate-pulse" />
-          <span className="text-xs font-mono tracking-widest text-neon-cyan uppercase">
-            Department of Information Technology Presents
-          </span>
-        </motion.div>
-
+        <div className="w-full flex justify-center">
+  <motion.div
+    initial={{ opacity: 0, scale: 0.9 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ delay: 0.2 }}
+    className="inline-flex items-center gap-2 px-4 py-1.5 
+               rounded-full glass-card border-neon-cyan/20 mb-5"
+  >
+    <Cpu className="w-4 h-4 text-neon-cyan animate-pulse" />
+    <span className="text-xs font-mono tracking-wide text-neon-cyan uppercase text-center">
+      Department of Information Technology Presents
+    </span>
+  </motion.div>
+</div>
         <h1 className="text-6xl md:text-8xl lg:text-9xl font-display font-bold tracking-tighter text-white mb-6 leading-none">
           INTELLECTRA <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-cyan to-neon-blue glow-text">
