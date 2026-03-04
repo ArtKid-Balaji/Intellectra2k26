@@ -21,34 +21,42 @@ export const Contact = () => {
               Have questions about symposium? Our team is here to help.
             </p>
 
-            {/* Location */}
-<div className="flex items-start gap-4 mb-10">
-  <motion.a
-    href="https://www.google.com/maps/place/Adhiparasakthi+Engineering+College/@12.4370881,79.820177,17.4z/data=!4m10!1m2!2m1!1sapec+college!3m6!1s0x3a5319fc373f6277:0xca3a2cbf53c66b03!8m2!3d12.436921!4d79.821985!15sCgxhcGVjIGNvbGxlZ2VaDiIMYXBlYyBjb2xsZWdlkgEHY29sbGVnZZoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VNeWR6ZFllVWRuRUFF4AEA-gEECBQQKA!16s%2Fm%2F011197_n?entry=ttu&g_ep=EgoyMDI2MDMwMS4xIKXMDSoASAFQAw%3D%3D"
-    target="_blank"
-    rel="noopener noreferrer"
-    whileHover={{ y: -3 }}
-    className="w-18 h-18 rounded-lg glass-card flex items-center justify-center mt-1"
-  >
-    <MapPin
-      className="w-6 h-6 text-blue-500"
-      style={{
-        filter: "drop-shadow(0 0 8px  #2563eb) drop-shadow(0 0 16px #2563eb)"
-      }}
-    />
-  </motion.a>
+{/* Location Section */}
+<div className="mb-10">
 
-  <div>
-    <h4 className="text-white font-bold mb-1">Location</h4>
-    <p className="text-white text-m leading-relaxed">
+  {/* Heading */}
+  <h4 className="text-white font-bold text-3xl mb-4">
+    Location
+  </h4>
+
+  {/* Icon + Address Row */}
+  <div className="flex items-start gap-4">
+
+    <motion.a
+      href="https://www.google.com/maps/place/Adhiparasakthi+Engineering+College"
+      target="_blank"
+      rel="noopener noreferrer"
+      whileHover={{ y: -3 }}
+      className="w-16 h-16 rounded-lg glass-card flex items-center justify-center"
+    >
+      <MapPin
+        className="w-7 h-7 text-blue-500"
+        style={{
+          filter: "drop-shadow(0 0 8px #2563eb) drop-shadow(0 0 16px #2563eb)"
+        }}
+      />
+    </motion.a>
+
+    <p className="text-white text-lg leading-relaxed">
       Adhiparasakthi Engineering College,<br />
       Melmaruvathur – 603319, Tamil Nadu.
     </p>
+
   </div>
 </div>
 
-            <h2 className="text-4xl font-display font-bold text-white mb-6">
-              Follow Us <span className="text-neon-cyan">ONLINE</span>
+            <h2 className="text-4xl font-display font-bold text-white mb-3">
+              Follow Us <span className="text-neon-cyan">Online</span>
             </h2>
 
             {/* Social Icons */}

@@ -24,10 +24,11 @@ export const LoadingScreen = ({ onComplete }: { onComplete: () => void }) => {
       initial={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.8, ease: "easeInOut" }}
-    >
-       <p className="mt-4 font-mono text-m text-neon-cyan/60 tracking-widest uppercase">
-        Department of INformation Technology Presents
-      </p>
+    ><p className="mt-4 font-light text-xs sm:text-sm 
+              text-neon-cyan/70 tracking-wider 
+              uppercase text-center px-6">
+  Department of Information Technology Presents
+</p>
       <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
