@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Phone, MapPin, Instagram, Facebook, Linkedin } from "lucide-react";
+import { Phone, MapPin, Camera, Share2, Network } from "lucide-react";
 
 export const Contact = () => {
   return (
@@ -68,7 +68,7 @@ export const Contact = () => {
                 whileHover={{ y: -5 }}
                 className="w-14 h-14 rounded-lg glass-card flex items-center justify-center"
               >
-                <Linkedin
+                <Network
                   className="w-5 h-5 text-blue-500"
                   style={{
                     filter: "drop-shadow(0 0 8px  #2563eb) drop-shadow(0 0 16px #2563eb)"
@@ -82,7 +82,7 @@ export const Contact = () => {
                 whileHover={{ y: -5 }}
                 className="w-14 h-14 rounded-lg glass-card flex items-center justify-center"
               >
-                <Instagram
+                <Camera
                   className="w-5 h-5 text-pink-500"
                   style={{
                     filter: "drop-shadow(0 0 8px #ec4899) drop-shadow(0 0 16px #ec4899)"
@@ -96,7 +96,7 @@ export const Contact = () => {
                 whileHover={{ y: -5 }}
                 className="w-14 h-14 rounded-lg glass-card flex items-center justify-center"
               >
-                <Facebook
+                <Share2
                   className="w-5 h-5 text-blue-600"
                   style={{
                     filter: "drop-shadow(0 0 8px #2563eb) drop-shadow(0 0 16px #2563eb)"
@@ -128,9 +128,9 @@ export const Contact = () => {
 
                   {/* Student Chairperson */}
                   <div className="flex items-center gap-5">
-                    <div className="w-14 h-14 rounded-full bg-slate-800 flex items-center justify-center">
+                    <a href="tel:+919342661192" className="w-14 h-14 rounded-full bg-slate-800 flex items-center justify-center hover:bg-slate-700 transition-colors cursor-pointer">
                       <Phone className="w-5 h-5 text-neon-cyan" />
-                    </div>
+                    </a>
                     <div>
                       <p className="text-white font-medium text-sm">
                         Mr. K. Venkatesh (Student Chairperson)
@@ -143,9 +143,9 @@ export const Contact = () => {
 
                   {/* Student Vice Chairperson */}
                   <div className="flex items-center gap-5">
-                    <div className="w-14 h-14 rounded-full bg-slate-800 flex items-center justify-center">
+                    <a href="tel:+919655777274" className="w-14 h-14 rounded-full bg-slate-800 flex items-center justify-center hover:bg-slate-700 transition-colors cursor-pointer">
                       <Phone className="w-5 h-5 text-neon-cyan" />
-                    </div>
+                    </a>
                     <div>
                       <p className="text-white font-medium text-sm">
                         Ms. P. Jayasri (Student Vice Chairperson)
@@ -158,9 +158,9 @@ export const Contact = () => {
 
                   {/* Staff Coordinator */}
                   <div className="flex items-center gap-5">
-                    <div className="w-14 h-14 rounded-full bg-slate-800 flex items-center justify-center">
+                    <a href="tel:+919080315402" className="w-14 h-14 rounded-full bg-slate-800 flex items-center justify-center hover:bg-slate-700 transition-colors cursor-pointer">
                       <Phone className="w-5 h-5 text-neon-cyan" />
-                    </div>
+                    </a>
                     <div>
                       <p className="text-white font-medium text-sm">
                         Ms. S. Vanmathi (Faculty Coordinator)
@@ -173,9 +173,9 @@ export const Contact = () => {
 
                   {/* Convener */}
                   <div className="flex items-center gap-5">
-                    <div className="w-14 h-14 rounded-full bg-slate-800 flex items-center justify-center">
+                    <a href="tel:+918220925050" className="w-14 h-14 rounded-full bg-slate-800 flex items-center justify-center hover:bg-slate-700 transition-colors cursor-pointer">
                       <Phone className="w-5 h-5 text-neon-cyan" />
-                    </div>
+                    </a>
                     <div>
                       <p className="text-white font-medium text-sm">
                         Mrs. S. Lavanya (Faculty Convener)
