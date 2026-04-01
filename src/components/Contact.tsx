@@ -148,7 +148,10 @@ export const Contact = () => {
                     </a>
                     <div>
                       <p className="text-white font-medium text-sm">
-                        Mr. L. BALAJI (Student Coordinator)
+                        Mr. L. BALAJI
+                      </p>
+                      <p className="text-neon-cyan text-xs">
+                        (Student Coordinator)
                       </p>
                       <p className="text-slate-400 text-sm">
                         +91 8608802727
@@ -163,7 +166,10 @@ export const Contact = () => {
                     </a>
                     <div>
                       <p className="text-white font-medium text-sm">
-                        Ms. S. MOHANAPRIYA (Student Coordinator)
+                        Ms. S. MOHANAPRIYA
+                      </p>
+                      <p className="text-neon-cyan text-xs">
+                        (Student Coordinator)
                       </p>
                       <p className="text-slate-400 text-sm">
                         +91 6374663499
@@ -178,7 +184,10 @@ export const Contact = () => {
                     </a>
                     <div>
                       <p className="text-white font-medium text-sm">
-                        Mrs. S. SASIREKHA (Faculty Coordinator)
+                        Mrs. S. SASIREKHA
+                      </p>
+                      <p className="text-neon-cyan text-xs">
+                        (Faculty Coordinator)
                       </p>
                       <p className="text-slate-400 text-sm">
                         +91 8778261057
@@ -193,7 +202,10 @@ export const Contact = () => {
                     </a>
                     <div>
                       <p className="text-white font-medium text-sm">
-                        Mr. P. SAKTHIVEL (Convener)
+                        Mr. P. SAKTHIVEL
+                      </p>
+                      <p className="text-neon-cyan text-xs">
+                        (Convener)
                       </p>
                       <p className="text-slate-400 text-sm">
                         +91 9578134230
