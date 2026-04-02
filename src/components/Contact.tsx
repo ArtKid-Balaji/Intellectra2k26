@@ -12,42 +12,43 @@ export const Contact = () => {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
+            className="space-y-6"
           >
-            <h2 className="text-4xl md:text-6xl font-display font-bold text-white mb-5">
+            <h2 className="text-4xl md:text-6xl font-display font-bold text-white">
               GET IN <span className="text-neon-cyan">TOUCH</span>
             </h2>
 
-            <p className="text-white mb-10 text-lg">
+            <p className="text-white text-lg">
               Have questions about symposium? Our team is here to help.
             </p>
 
             {/* Location Section */}
-            <div className="mb-10">
+            <div>
 
               {/* Heading */}
-              <h4 className="text-white font-bold text-3xl mb-4">
+              <h4 className="text-white font-bold text-3xl mb-3">
                 Location
               </h4>
 
               {/* Icon + Address Row */}
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-3">
 
                 <motion.a
                   href="https://www.google.com/maps/place/Adhiparasakthi+Engineering+College/@12.436921,79.8194101,17z/data=!3m1!4b1!4m6!3m5!1s0x3a5319fc373f6277:0xca3a2cbf53c66b03!8m2!3d12.436921!4d79.821985!16s%2Fm%2F011197_n?entry=ttu&g_ep=EgoyMDI2MDMyOS4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ y: -3 }}
-                  className="w-16 h-16 rounded-lg glass-card flex items-center justify-center"
+                  className="w-12 h-12 rounded-lg glass-card flex items-center justify-center"
                 >
                   <MapPin
-                    className="w-7 h-7 text-neon-cyan"
+                    className="w-5 h-5 text-neon-cyan"
                     style={{
                       filter: "drop-shadow(0 0 8px rgba(0,242,255,0.7)) drop-shadow(0 0 16px rgba(0,242,255,0.5))"
                     }}
                   />
                 </motion.a>
 
-                <p className="text-white text-lg leading-relaxed">
+                <p className="text-white text-base leading-relaxed">
                   Adhiparasakthi Engineering College,<br />
                   Melmaruvathur – 603319, Tamil Nadu.
                 </p>
@@ -55,7 +56,7 @@ export const Contact = () => {
               </div>
             </div>
 
-            <h2 className="text-4xl font-display font-bold text-white mb-3">
+            <h2 className="text-4xl font-display font-bold text-white">
               Follow Us <span className="text-neon-cyan">Online</span>
             </h2>
 
@@ -119,6 +120,44 @@ export const Contact = () => {
                 </svg>
               </motion.a>
             </div>
+
+            <div>
+              <h3 className="text-3xl font-display font-bold text-white mb-4">
+                Leadership
+              </h3>
+
+              <div className="space-y-4">
+                <div>
+                  <p className="text-white font-medium text-base">
+                    Mr. K. HEMAKUMAR <span className="text-neon-cyan text-sm">- HOD / IT</span>
+                  </p>
+                </div>
+
+                <div>
+                  <p className="text-white font-medium text-base">
+                    Mr. M. SADHANANDAN <span className="text-neon-cyan text-sm">- AO</span>
+                  </p>
+                </div>
+
+                <div>
+                  <p className="text-white font-medium text-base">
+                    Dr. V. RAMASAMY <span className="text-neon-cyan text-sm">- Dean</span>
+                  </p>
+                </div>
+
+                <div>
+                  <p className="text-white font-medium text-base">
+                    Dr. A. BHUVANESHWARI <span className="text-neon-cyan text-sm">- Vice Principal</span>
+                  </p>
+                </div>
+
+                <div>
+                  <p className="text-white font-medium text-base">
+                    Dr. J. RAJA <span className="text-neon-cyan text-sm">- Principal</span>
+                  </p>
+                </div>
+              </div>
+            </div>
           </motion.div>
 
           {/* ================= RIGHT SIDE ================= */}
@@ -141,9 +180,45 @@ export const Contact = () => {
 
                 <div className="space-y-6">
 
-                  {/* Student Chairperson */}
+                  {/* Event Coordinator */}
                   <div className="flex items-center gap-5">
                     <a href="tel:+919342661192" className="w-14 h-14 rounded-full bg-slate-800 flex items-center justify-center hover:bg-slate-700 transition-colors cursor-pointer">
+                      <Phone className="w-5 h-5 text-neon-cyan" />
+                    </a>
+                    <div>
+                      <p className="text-white font-medium text-sm">
+                        Mr. K. VENKATESH
+                      </p>
+                      <p className="text-neon-cyan text-xs">
+                        Student Coordinator
+                      </p>
+                      <p className="text-slate-400 text-sm">
+                        +91 9342661192
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Event Coordinator */}
+                  <div className="flex items-center gap-5">
+                    <a href="tel:+919655777274" className="w-14 h-14 rounded-full bg-slate-800 flex items-center justify-center hover:bg-slate-700 transition-colors cursor-pointer">
+                      <Phone className="w-5 h-5 text-neon-cyan" />
+                    </a>
+                    <div>
+                      <p className="text-white font-medium text-sm">
+                        Ms. P. JAYASRI
+                      </p>
+                      <p className="text-neon-cyan text-xs">
+                        Student Coordinator
+                      </p>
+                      <p className="text-slate-400 text-sm">
+                        +91 9655777274
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Event Coordinator */}
+                  <div className="flex items-center gap-5">
+                    <a href="tel:+918608802727" className="w-14 h-14 rounded-full bg-slate-800 flex items-center justify-center hover:bg-slate-700 transition-colors cursor-pointer">
                       <Phone className="w-5 h-5 text-neon-cyan" />
                     </a>
                     <div>
@@ -151,7 +226,7 @@ export const Contact = () => {
                         Mr. L. BALAJI
                       </p>
                       <p className="text-neon-cyan text-xs">
-                        (Student Coordinator)
+                        Student Coordinator
                       </p>
                       <p className="text-slate-400 text-sm">
                         +91 8608802727
@@ -159,9 +234,9 @@ export const Contact = () => {
                     </div>
                   </div>
 
-                  {/* Student Vice Chairperson */}
+                  {/* Event Coordinator */}
                   <div className="flex items-center gap-5">
-                    <a href="tel:+919655777274" className="w-14 h-14 rounded-full bg-slate-800 flex items-center justify-center hover:bg-slate-700 transition-colors cursor-pointer">
+                    <a href="tel:+916374663499" className="w-14 h-14 rounded-full bg-slate-800 flex items-center justify-center hover:bg-slate-700 transition-colors cursor-pointer">
                       <Phone className="w-5 h-5 text-neon-cyan" />
                     </a>
                     <div>
@@ -169,7 +244,7 @@ export const Contact = () => {
                         Ms. S. MOHANAPRIYA
                       </p>
                       <p className="text-neon-cyan text-xs">
-                        (Student Coordinator)
+                        Student Coordinator
                       </p>
                       <p className="text-slate-400 text-sm">
                         +91 6374663499
@@ -177,27 +252,9 @@ export const Contact = () => {
                     </div>
                   </div>
 
-                  {/* Staff Coordinator */}
+                  {/* Event Coordinator */}
                   <div className="flex items-center gap-5">
-                    <a href="tel:+919080315402" className="w-14 h-14 rounded-full bg-slate-800 flex items-center justify-center hover:bg-slate-700 transition-colors cursor-pointer">
-                      <Phone className="w-5 h-5 text-neon-cyan" />
-                    </a>
-                    <div>
-                      <p className="text-white font-medium text-sm">
-                        Mrs. S. SASIREKHA
-                      </p>
-                      <p className="text-neon-cyan text-xs">
-                        (Faculty Coordinator)
-                      </p>
-                      <p className="text-slate-400 text-sm">
-                        +91 8778261057
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Convener */}
-                  <div className="flex items-center gap-5">
-                    <a href="tel:+918220925050" className="w-14 h-14 rounded-full bg-slate-800 flex items-center justify-center hover:bg-slate-700 transition-colors cursor-pointer">
+                    <a href="tel:+919578134230" className="w-14 h-14 rounded-full bg-slate-800 flex items-center justify-center hover:bg-slate-700 transition-colors cursor-pointer">
                       <Phone className="w-5 h-5 text-neon-cyan" />
                     </a>
                     <div>
@@ -205,10 +262,46 @@ export const Contact = () => {
                         Mr. P. SAKTHIVEL
                       </p>
                       <p className="text-neon-cyan text-xs">
-                        (Convener)
+                        Convener
                       </p>
                       <p className="text-slate-400 text-sm">
-                        +91 9578134230
+                        +91 95781 34230
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Event Coordinator */}
+                  <div className="flex items-center gap-5">
+                    <a href="tel:+918778261057" className="w-14 h-14 rounded-full bg-slate-800 flex items-center justify-center hover:bg-slate-700 transition-colors cursor-pointer">
+                      <Phone className="w-5 h-5 text-neon-cyan" />
+                    </a>
+                    <div>
+                      <p className="text-white font-medium text-sm">
+                        Mrs. S. SASIREKHA
+                      </p>
+                      <p className="text-neon-cyan text-xs">
+                        Faculty Coordinator
+                      </p>
+                      <p className="text-slate-400 text-sm">
+                        +91 87782 61057
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Event Coordinator */}
+                  <div className="flex items-center gap-5">
+                    <a href="tel:+918220925050" className="w-14 h-14 rounded-full bg-slate-800 flex items-center justify-center hover:bg-slate-700 transition-colors cursor-pointer">
+                      <Phone className="w-5 h-5 text-neon-cyan" />
+                    </a>
+                    <div>
+                      <p className="text-white font-medium text-sm">
+                        Mrs. S. LAVANYA
+                      </p>
+                      <p className="text-neon-cyan text-xs">
+                        Faculty Coordinator
+                      </p>
+                      <p className="text-slate-400 text-sm">
+                        +91 82209 25050
                       </p>
                     </div>
                   </div>

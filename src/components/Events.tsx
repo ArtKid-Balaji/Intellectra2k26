@@ -7,6 +7,7 @@ interface Event {
   title: string;
   description: string;
   rules: string[];
+  coordinators: string[];
   icon: any;
   type: 'tech' | 'non-tech';
 }
@@ -17,6 +18,7 @@ const events: Event[] = [
     title: "PROMPT STACK",
     description: "Design and develop a creative website using modern tools and AI-driven prompts to showcase innovation and functionality.",
     rules: ["Duration: 2 Hours", "vibe coding", "AI integration required"],
+    coordinators: ["Sakthimurugan V", "Adithya R", "Agnes Joergiya S", "Jannathul Firdhouse K"],
     icon: Zap,
     type: 'tech'
   },
@@ -25,6 +27,7 @@ const events: Event[] = [
     title: "CODESMITH",
     description: "Test your debugging and coding skills by identifying errors and crafting efficient solutions under pressure.",
     rules: [" No malpractice or copying", "Languages: Java, Python", "Duration: 2 Hours"],
+    coordinators: ["Dhayanithi S", "Mohanbabu E", "Divya R", "Arthi S"],
     icon: Code,
     type: 'tech'
   },
@@ -33,6 +36,7 @@ const events: Event[] = [
     title: "INNOVATION MEET",
     description: "Present your ideas, research, or projects and impress the judges with your innovation and presentation skills.",
     rules: ["Team of 3-4 members", "PPT should be submitted before event", "Presentation duration: 10 mins"],
+    coordinators: ["BHARATH S", "LOGESH B", "ABINAYA A", "GOMATHI K"],
     icon: Lightbulb,
     type: 'tech'
   },
@@ -41,6 +45,7 @@ const events: Event[] = [
     title: "INFOGRAPHIX",
     description: "Create visually appealing posters to communicate ideas effectively through design, creativity, and clarity.",
     rules: ["Duration: 2 Hours", "Topic will be given on-spot", "Tool: Canva "],
+    coordinators: ["Pugazhendhi S", "Sakthivel B", "Anusha N", "Praveena V"],
     icon: Layout,
     type: 'tech'
   },
@@ -49,6 +54,7 @@ const events: Event[] = [
     title: "BOOYAH BATTLE",
     description: "Compete in an intense Free Fire tournament and prove your squad survival and combat skills.",
     rules: ["Team of 4 members", "Multiple rounds and playoffs", "Best squad tactics win"],
+    coordinators: ["SUDHARSANAN K", "ANBAZHAGAN N", "SHANMUGA PRIYA V", "PRIYADHARSHINI R"],
     icon: Gamepad2,
     type: 'non-tech'
   },
@@ -57,6 +63,7 @@ const events: Event[] = [
     title: "CHECKMATE CLASH",
     description: "Challenge your opponents in a strategic chess battle and showcase your tactical thinking.",
     rules: ["Individual participation", "Knockout rounds", "Standard chess rules"],
+    coordinators: ["SRIDHAR B", "SHARIC BASHA J", "HARSHAVARTHINI R", "DEVADHARSHINI A"],
     icon: Swords,
     type: 'non-tech'
   },
@@ -65,6 +72,7 @@ const events: Event[] = [
     title: "NEUROLINK",
     description: "Test your logical thinking by connecting clues, patterns, and ideas in a fast-paced brain game.",
     rules: ["Individual", "Buzzer rounds", "Pattern and logic-based challenges"],
+    coordinators: ["Avinesh Kumar D", "Hemananth B V", "Varalakshmi G", "Sharmi M"],
     icon: Brain,
     type: 'non-tech'
   },
@@ -73,6 +81,7 @@ const events: Event[] = [
     title: "AUCTION ARENA",
     description: "Build your dream cricket team through strategic bidding and compete based on performance and decision-making.",
     rules: ["Team of 2-4 members", "Auction-based bidding system", "Strategic team building"],
+    coordinators: ["Samynathan V", "Jayenthiran M", "PUNNIYA JANANI B", "NARMADHA P"],
     icon: Trophy,
     type: 'non-tech'
   }
@@ -213,6 +222,18 @@ export const Events = () => {
                         <li key={i} className="flex items-start gap-3 text-slate-300">
                           <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-neon-cyan shadow-[0_0_5px_#00f2ff]" />
                           {rule}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="text-sm font-mono text-slate-400 uppercase tracking-widest mb-4">Coordinator</h4>
+                    <ul className="space-y-3">
+                      {selectedEvent.coordinators.map((coordinator, i) => (
+                        <li key={i} className="flex items-start gap-3 text-slate-300">
+                          <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-neon-cyan shadow-[0_0_5px_#00f2ff]" />
+                          {coordinator}
                         </li>
                       ))}
                     </ul>
