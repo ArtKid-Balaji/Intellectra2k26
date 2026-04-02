@@ -141,19 +141,19 @@ export const Contact = () => {
 
                 <div>
                   <p className="text-white font-medium text-base">
-                    Dr. V. RAMASAMY <span className="text-neon-cyan text-sm">- Dean</span>
+                    Dr. V. RAMASAMY <span className="text-neon-cyan text-sm">- DEAN</span>
                   </p>
                 </div>
 
                 <div>
                   <p className="text-white font-medium text-base">
-                    Dr. A. BHUVANESHWARI <span className="text-neon-cyan text-sm">- Vice Principal</span>
+                    Dr. A. BHUVANESHWARI <span className="text-neon-cyan text-sm">- VICE PRINCIPAL</span>
                   </p>
                 </div>
 
                 <div>
                   <p className="text-white font-medium text-base">
-                    Dr. J. RAJA <span className="text-neon-cyan text-sm">- Principal</span>
+                    Dr. J. RAJA <span className="text-neon-cyan text-sm">- PRINCIPAL</span>
                   </p>
                 </div>
               </div>
