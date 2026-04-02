@@ -18,7 +18,7 @@ const events: Event[] = [
     title: "PROMPT STACK",
     description: "Design and develop a creative website using modern tools and AI-driven prompts to showcase innovation and functionality.",
     rules: ["Duration: 2 Hours", "vibe coding", "AI integration required"],
-    coordinators: ["Sakthimurugan V", "Adithya R", "Agnes Joergiya S", "Jannathul Firdhouse K"],
+    coordinators: ["SAKTHIMURUGAN V", "ADITHYA R", "AGNES JOERGIYA S", "JANNATHUL FIRDHOUSE K"],
     icon: Zap,
     type: 'tech'
   },
@@ -27,7 +27,7 @@ const events: Event[] = [
     title: "CODESMITH",
     description: "Test your debugging and coding skills by identifying errors and crafting efficient solutions under pressure.",
     rules: [" No malpractice or copying", "Languages: Java, Python", "Duration: 2 Hours"],
-    coordinators: ["Dhayanithi S", "Mohanbabu E", "Divya R", "Arthi S"],
+    coordinators: ["DHAYANITHI S", "MOHANBABU E", "DIVYA R", "ARTHI S"],
     icon: Code,
     type: 'tech'
   },
@@ -45,7 +45,7 @@ const events: Event[] = [
     title: "INFOGRAPHIX",
     description: "Create visually appealing posters to communicate ideas effectively through design, creativity, and clarity.",
     rules: ["Duration: 2 Hours", "Topic will be given on-spot", "Tool: Canva "],
-    coordinators: ["Pugazhendhi S", "Sakthivel B", "Anusha N", "Praveena V"],
+    coordinators: ["PUGAZHENDHI S", "SAKTHIVEL B", "ANUSHA N", "PRAVEENA V"],
     icon: Layout,
     type: 'tech'
   },
@@ -72,7 +72,7 @@ const events: Event[] = [
     title: "NEUROLINK",
     description: "Test your logical thinking by connecting clues, patterns, and ideas in a fast-paced brain game.",
     rules: ["Individual", "Buzzer rounds", "Pattern and logic-based challenges"],
-    coordinators: ["Avinesh Kumar D", "Hemananth B V", "Varalakshmi G", "Sharmi M"],
+    coordinators: ["AVINESH KUMAR D", "HEMANANTH B V", "VARALAKSHMI G", "SHARMI M"],
     icon: Brain,
     type: 'non-tech'
   },
@@ -81,7 +81,7 @@ const events: Event[] = [
     title: "AUCTION ARENA",
     description: "Build your dream cricket team through strategic bidding and compete based on performance and decision-making.",
     rules: ["Team of 2-4 members", "Auction-based bidding system", "Strategic team building"],
-    coordinators: ["Samynathan V", "Jayenthiran M", "PUNNIYA JANANI B", "NARMADHA P"],
+    coordinators: ["SAMYNATHAN V", "JAYENTHIRAN M", "PUNNIYA JANANI B", "NARMADHA P"],
     icon: Trophy,
     type: 'non-tech'
   }
