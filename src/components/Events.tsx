@@ -20,6 +20,7 @@ interface Event {
   description: string;
   rules: string[];
   coordinators: string[];
+  facultyCoordinator: string;
   icon: LucideIcon;
   type: "tech" | "non-tech";
 }
@@ -31,6 +32,7 @@ const events: Event[] = [
     description: "Design and develop a creative website using modern tools and AI-driven prompts to showcase innovation and functionality.",
     rules: ["Individual or Team (2–4 members)", "Duration: 2 Hour", "Vibe coding"],
     coordinators: ["SAKTHIMURUGAN V", "ADHITHYA R", "AGNES JOERGIYA S", "JANNATHUL FIRDHOUSE K"],
+    facultyCoordinator: "Ms. S. DIVYADHARSHINI",
     icon: Zap,
     type: "tech"
   },
@@ -40,6 +42,7 @@ const events: Event[] = [
     description: "Test your debugging and coding skills by identifying errors and crafting efficient solutions under pressure.",
     rules: ["Individual or Team (2–4 members)", "Languages: Java, Python", "Duration: 2 Hours"],
     coordinators: ["DHAYANITHI S", "MOHANBABU E", "DIVYA R", "ARTHI S"],
+    facultyCoordinator: "Ms. S. VANMATHI",
     icon: Code,
     type: "tech"
   },
@@ -49,6 +52,7 @@ const events: Event[] = [
     description: "Present your ideas, research, or projects and impress the judges with your innovation and presentation skills.",
     rules: ["Team of 3-4 members", "PPT should be submitted before event", "Presentation duration: 10 mins"],
     coordinators: ["BHARATH S", "LOGESH B", "ABINAYA A", "GOMATHI K"],
+    facultyCoordinator: "Mrs. S. SASIREKHA",
     icon: Lightbulb,
     type: "tech"
   },
@@ -58,6 +62,7 @@ const events: Event[] = [
     description: "Create visually appealing posters to communicate ideas effectively through design, creativity, and clarity.",
     rules: ["Individual or Team (2–4 members)", "Duration: 2 Hours", "Tool: Canva "],
     coordinators: ["PUGAZHENDHI S", "SAKTHIVEL B", "ANUSHA N", "PRAVEENA V"],
+    facultyCoordinator: "Mrs. S. LAVANYA",
     icon: Layout,
     type: "tech"
   },
@@ -67,6 +72,7 @@ const events: Event[] = [
     description: "Compete in an intense Free Fire tournament and prove your squad survival and combat skills.",
     rules: ["Team of 4 members", "Multiple rounds and playoffs", "Best squad tactics win"],
     coordinators: ["SUDHARSANAN K", "ANBAZHAGAN N", "SHANMUGA PRIYA V", "PRIYADHARSHINI R"],
+    facultyCoordinator: "Mr. P. ARIHARAN",
     icon: Gamepad2,
     type: "non-tech"
   },
@@ -76,6 +82,7 @@ const events: Event[] = [
     description: "Challenge your opponents in a strategic chess battle and showcase your tactical thinking.",
     rules: ["Individual participation", "Knockout rounds", "Standard chess rules"],
     coordinators: ["SRIDHAR B", "SHARIC BASHA J", "HARSHAVARTHINI R", "DEVADHARSHINI A"],
+    facultyCoordinator: "Mr. D. BOSE",
     icon: Swords,
     type: "non-tech"
   },
@@ -85,6 +92,7 @@ const events: Event[] = [
     description: "Test your logical thinking by connecting clues, patterns, and ideas in a fast-paced brain game.",
     rules: ["Individual", "Buzzer rounds", "Pattern and logic-based challenges"],
     coordinators: ["AVINESH KUMAR D", "HEMANANTH B V", "VARALAKSHMI G", "SHARMI M"],
+    facultyCoordinator: "Mrs. M. SEETHA",
     icon: Brain,
     type: "non-tech"
   },
@@ -94,6 +102,7 @@ const events: Event[] = [
     description: "Build your dream cricket team through strategic bidding and compete based on performance and decision-making.",
     rules: ["Team of 2-4 members", "Auction-based bidding system", "Limited teams only"],
     coordinators: ["SAMYNATHAN V", "JAYENTHIRAN M", "PUNNIYA JANANI B", "NARMADHA P"],
+    facultyCoordinator: "Mr. S. SAKTHIVEL",
     icon: Trophy,
     type: "non-tech"
   }
@@ -111,7 +120,7 @@ export const Events = () => {
       layoutId={event.id}
       onClick={() => setSelectedEvent(event)}
       whileHover={{ y: -10, scale: 1.02 }}
-      className="glass-card p-8 rounded-2xl cursor-pointer relative overflow-hidden"
+      className="glass-card p-6 rounded-2xl cursor-pointer relative overflow-hidden"
     >
       <div className="absolute top-0 right-0 p-4 opacity-20">
         <event.icon
@@ -121,18 +130,18 @@ export const Events = () => {
       </div>
 
       <div className="relative z-10">
-        <div className="w-12 h-12 rounded-lg bg-neon-cyan/20 flex items-center justify-center mb-6 border border-neon-cyan/40 shadow-[0_0_20px_rgba(0,255,255,0.4)]">
+        <div className="w-12 h-12 rounded-lg bg-neon-cyan/20 flex items-center justify-center mb-4 border border-neon-cyan/40 shadow-[0_0_20px_rgba(0,255,255,0.4)]">
           <event.icon
             className="w-6 h-6 text-neon-cyan"
             style={{ filter: "drop-shadow(0 0 10px #00ffff)" }}
           />
         </div>
 
-        <h3 className="text-2xl font-display font-bold text-white mb-3">
+        <h3 className="text-xl md:text-2xl font-display font-bold text-white mb-2">
           {event.title}
         </h3>
 
-        <div className="flex items-center text-xs font-mono tracking-widest text-neon-cyan uppercase">
+        <div className="flex items-center text-[10px] md:text-xs font-mono tracking-widest text-neon-cyan uppercase">
           View Details
         </div>
       </div>
@@ -154,7 +163,7 @@ export const Events = () => {
           <div className="w-24 h-1 bg-neon-cyan mx-auto rounded-full" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-32">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-32">
           {events.filter((e) => e.type === "tech").map((event) => (
             <EventCard key={event.id} event={event} />
           ))}
@@ -172,7 +181,7 @@ export const Events = () => {
           <div className="w-24 h-1 bg-neon-cyan mx-auto rounded-full" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {events.filter((e) => e.type === "non-tech").map((event) => (
             <EventCard key={event.id} event={event} />
           ))}
@@ -200,30 +209,30 @@ export const Events = () => {
                 <X className="w-6 h-6 text-slate-400" />
               </button>
 
-              <div className="p-8 md:p-12">
-                <div className="flex items-center gap-4 mb-8">
-                  <div className="w-16 h-16 rounded-2xl bg-neon-cyan/10 flex items-center justify-center border border-neon-cyan/20">
-                    <selectedEvent.icon className="w-8 h-8 text-neon-cyan" />
+              <div className="p-6 md:p-10 max-h-[90vh] overflow-y-auto custom-scrollbar">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-12 h-12 md:w-16 md:h-16 rounded-2xl bg-neon-cyan/10 flex items-center justify-center border border-neon-cyan/20">
+                    <selectedEvent.icon className="w-6 h-6 md:w-8 md:h-8 text-neon-cyan" />
                   </div>
                   <div>
-                    <h3 className="text-3xl font-display font-bold text-white">{selectedEvent.title}</h3>
-                    <span className="text-xs font-mono text-neon-cyan uppercase tracking-widest">
+                    <h3 className="text-2xl md:text-3xl font-display font-bold text-white">{selectedEvent.title}</h3>
+                    <span className="text-[10px] md:text-xs font-mono text-neon-cyan uppercase tracking-widest">
                       {selectedEvent.type === "tech" ? "Technical Event" : "Non-Technical Event"}
                     </span>
                   </div>
                 </div>
 
-                <div className="space-y-8">
+                <div className="space-y-6">
                   <div>
-                    <h4 className="text-sm font-mono text-slate-400 uppercase tracking-widest mb-3">Description</h4>
-                    <p className="text-slate-200 leading-relaxed">{selectedEvent.description}</p>
+                    <h4 className="text-xs font-mono text-slate-400 uppercase tracking-widest mb-2">Description</h4>
+                    <p className="text-sm md:text-base text-slate-200 leading-relaxed">{selectedEvent.description}</p>
                   </div>
 
                   <div>
-                    <h4 className="text-sm font-mono text-slate-400 uppercase tracking-widest mb-4">Event Rules</h4>
-                    <ul className="space-y-3">
+                    <h4 className="text-xs font-mono text-slate-400 uppercase tracking-widest mb-3">Event Rules</h4>
+                    <ul className="space-y-2">
                       {selectedEvent.rules.map((rule, i) => (
-                        <li key={i} className="flex items-start gap-3 text-slate-300">
+                        <li key={i} className="flex items-start gap-3 text-sm text-slate-300">
                           <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-neon-cyan shadow-[0_0_5px_#00f2ff]" />
                           {rule}
                         </li>
@@ -232,15 +241,21 @@ export const Events = () => {
                   </div>
 
                   <div>
-                    <h4 className="text-sm font-mono text-slate-400 uppercase tracking-widest mb-4">Coordinator</h4>
-                    <ul className="space-y-3">
+                    <h4 className="text-xs font-mono text-slate-400 uppercase tracking-widest mb-3">Coordinators</h4>
+                    <ul className="space-y-2 mb-4">
                       {selectedEvent.coordinators.map((coordinator, i) => (
-                        <li key={i} className="flex items-start gap-3 text-slate-300">
+                        <li key={i} className="flex items-start gap-3 text-sm text-slate-300">
                           <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-neon-cyan shadow-[0_0_5px_#00f2ff]" />
                           {coordinator}
                         </li>
                       ))}
                     </ul>
+
+                    <h4 className="text-xs font-mono text-slate-400 uppercase tracking-widest mb-3">Faculty Coordinator</h4>
+                    <div className="flex items-start gap-3 text-sm text-slate-300">
+                      <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-neon-cyan shadow-[0_0_5px_#00f2ff]" />
+                      {selectedEvent.facultyCoordinator}
+                    </div>
                   </div>
 
                   <div className="pt-6 border-t border-white/10 flex items-center justify-between">
