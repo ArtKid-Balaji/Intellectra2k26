@@ -67,10 +67,10 @@ EVENT SCHEDULE:
 - 03:00 PM: Prize Distribution
 
 REWARDS:
-- Cash Prizes for well-performing teams
+- Cash Prizes: ₹1000 for Winners, ₹750 for Runners
 - Certificate of Recognition for winners
 - E-Certificates for all participants
-- Elite Networking opportunity with innovators, coders, and creators
+- participants are required to bring their own laptop for the event
 
 Be friendly, helpful, and conversational. Answer questions about the event, its events, schedule, requirements, rewards, and registration. If asked something not related to the event, politely redirect the conversation back to the event.`;
 

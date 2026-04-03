@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Clock, Coffee, Trophy, Mic2, Flag, Notebook } from "lucide-react";
+import { Clock, Trophy, Notebook } from "lucide-react";
 
 const schedule = [
   { time: "09:00 AM", event: "On Spot Registration", icon: Notebook},

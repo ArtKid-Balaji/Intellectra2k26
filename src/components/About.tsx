@@ -8,7 +8,7 @@ export const About = () => {
     {
       icon: Zap,
       title: "Cash Prizes",
-      desc: "Exciting rewards for well performing teams",
+      desc: "₹1000 for Winners\n₹750 for Runners",
     },
     {
       icon: Shield,
@@ -21,9 +21,9 @@ export const About = () => {
       desc: "Verified digital certificates for all participants",
     },
     {
-      icon: Globe,
-      title: "Elite Networking",
-      desc: "Collaborate with innovators, coders & creators",
+      icon: Shield,
+      title: "Important",
+      desc: "participants are required to bring their own laptop for the event",
     },
   ];
 
@@ -33,7 +33,7 @@ export const About = () => {
 
         {/* ===== TOP ABOUT SECTION ===== */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32">
-          
+
           {/* LEFT CONTENT */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -45,8 +45,8 @@ export const About = () => {
             </h2>
 
             <p className="text-white text-lg leading-relaxed mb-6">
-              INTELLECTRA 2K26 is the National-level Technical Symposium 
-              organized by the Department of Information Technology at 
+              INTELLECTRA 2K26 is the National-level Technical Symposium
+              organized by the Department of Information Technology at
               Adhiparasakthi Engineering College.
             </p>
 
@@ -86,12 +86,12 @@ export const About = () => {
           >
             <div className="absolute -inset-4 bg-neon-cyan/20 rounded-[40px] blur-2xl -z-10" />
             <img
-              src="https://i.ibb.co/TM2QwN5r/INTELLECTRA-2-K26.jpg"
+              src="https://i.ibb.co/wZfcXNhQ/INTELLECTRA-2-K26.jpg"
               alt="INTELLECTRA 2K26"
               className="rounded-[32px] border border-white/10 shadow-2xl cursor-pointer hover:shadow-neon-cyan/50 transition-shadow"
               onClick={() =>
                 setSelectedImage(
-                  "https://i.ibb.co/TM2QwN5r/INTELLECTRA-2-K26.jpg"
+                  "https://i.ibb.co/wZfcXNhQ/INTELLECTRA-2-K26.jpg"
                 )
               }
             />
@@ -108,7 +108,7 @@ export const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-             className="p-8 rounded-3xl 
+              className="p-8 rounded-3xl 
            bg-white/5 
            border border-neon-cyan/40
            backdrop-blur-xl
@@ -118,10 +118,10 @@ export const About = () => {
            shadow-[0_0_40px_rgba(0,255,255,0.2),0_0_80px_rgba(0,150,255,0.15)]"
             >
               <item.icon
-  className="w-12 h-12 text-neon-cyan mb-6
+                className="w-12 h-12 text-neon-cyan mb-6
              drop-shadow-[0_0_8px_rgba(0,255,255,0.8)]
              drop-shadow-[0_0_20px_rgba(0,255,255,0.6)]"
-/>
+              />
               {/* Title */}
               <h3 className="text-xl font-semibold mb-4 
                              text-transparent bg-clip-text 
@@ -131,7 +131,7 @@ export const About = () => {
               </h3>
 
               {/* Description */}
-              <p className="text-slate-300 text-sm leading-relaxed max-w-xs">
+              <p className="text-slate-300 text-sm leading-relaxed max-w-xs whitespace-pre-line">
                 {item.desc}
               </p>
             </motion.div>

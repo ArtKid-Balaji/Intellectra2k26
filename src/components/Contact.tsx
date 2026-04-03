@@ -50,7 +50,7 @@ export const Contact = () => {
 
                 <p className="text-white text-base leading-relaxed">
                   Adhiparasakthi Engineering College,<br />
-                  Melmaruvathur – 603319, Tamil Nadu.
+                  Melmaruvathur - 603319, Tamil Nadu.
                 </p>
 
               </div>

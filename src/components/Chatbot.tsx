@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect, FormEvent } from "react";
+import { useState, useRef, useEffect, type FormEvent } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { MessageCircle, X, Send } from "lucide-react";
 
@@ -48,7 +48,7 @@ export const Chatbot = () => {
     {
       role: "assistant",
       content:
-        "Hi! 👋 I'm your INTELLECTRA 2K26 assistant. I can help answer any questions about the event, events, schedule, registration, and prizes. What would you like to know?",
+        "Hi! I'm your INTELLECTRA 2K26 assistant. I can help answer any questions about the event, events, schedule, registration, and prizes. What would you like to know?",
     },
   ]);
   const [input, setInput] = useState("");
@@ -73,7 +73,6 @@ export const Chatbot = () => {
     setIsLoading(true);
 
     try {
-      // Call serverless function instead of Gemini API directly
       const response = await fetch("/api/generate", {
         method: "POST",
         headers: {
@@ -121,7 +120,6 @@ export const Chatbot = () => {
 
   return (
     <>
-      {/* Chat Button */}
       <motion.button
         onClick={() => setIsOpen(!isOpen)}
         className="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gradient-to-r from-neon-cyan to-neon-blue shadow-lg shadow-neon-cyan/50 flex items-center justify-center text-white z-40 hover:scale-110 transition-transform"
@@ -131,7 +129,6 @@ export const Chatbot = () => {
         <MessageCircle size={22} className="sm:w-6 sm:h-6" />
       </motion.button>
 
-      {/* Chat Window */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -140,7 +137,6 @@ export const Chatbot = () => {
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             className="fixed inset-x-3 bottom-20 top-16 sm:inset-auto sm:bottom-24 sm:right-8 sm:w-96 sm:h-[32rem] rounded-2xl bg-cyber-dark border border-neon-cyan/30 shadow-2xl shadow-neon-cyan/20 flex flex-col z-40 overflow-hidden"
           >
-            {/* Header */}
             <div className="bg-gradient-to-r from-neon-cyan/20 to-neon-blue/20 border-b border-neon-cyan/30 p-3 sm:p-4 flex items-center justify-between">
               <div>
                 <h3 className="text-white font-bold text-sm sm:text-base">INTELLECTRA Assistant</h3>
@@ -154,7 +150,6 @@ export const Chatbot = () => {
               </button>
             </div>
 
-            {/* Messages */}
             <div className="flex-1 overflow-y-auto p-3 sm:p-4 space-y-3 sm:space-y-4 bg-cyber-dark/50">
               {messages.map((msg, idx) => (
                 <motion.div
@@ -194,7 +189,6 @@ export const Chatbot = () => {
               <div ref={messagesEndRef} />
             </div>
 
-            {/* Input */}
             <form
               onSubmit={sendMessage}
               className="border-t border-neon-cyan/30 p-2 sm:p-3 flex gap-2 bg-cyber-dark/80"
